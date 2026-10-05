@@ -1,10 +1,10 @@
 return {
-  "stevearc/conform.nvim",
-  opts = {
-    formatters_by_ft = {
-      python = { "ruff_format", "ruff_organize_imports" },
-      lua = { "stylua" },
-      sh = { "shfmt" },
-    },
-  },
+	"stevearc/conform.nvim",
+	opts = {
+		formatters_by_ft = {
+			python = { "ruff_fix", "ruff_organize_imports", "ruff_format" },
+			lua = { "stylua" },
+			sh = { "shfmt" },
+		},
+	},
 }

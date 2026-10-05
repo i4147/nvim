@@ -85,9 +85,9 @@ map("v", "<A-k>", ":m '<-2<cr>gv=gv", {
   desc = "Move selection up",
 })
 
-map("n", "<leader>h", "<cmd>nohlsearch<cr>", {
-  desc = "Clear search highlight",
-})
+--map("n", "<leader>h", "<cmd>nohlsearch<cr>", {
+--  desc = "Clear search highlight",
+--})
 
 map("n", "<leader>w", "<cmd>w<cr>", {
   desc = "Save file",
@@ -113,18 +113,13 @@ map("n", "<leader>bd", "<cmd>bdelete<cr>", {
   desc = "Delete buffer",
 })
 
-map("n", "<leader>t", "<cmd>terminal<cr>", {
+map("n", "<leader>vt", "<cmd>terminal<cr>", {
   desc = "Open terminal",
 })
 
 map("t", "<Esc><Esc>", "<C-\\><C-n>", {
   desc = "Exit terminal mode",
 })
-
-map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
-map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
-map("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
-map("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
 
 map("n", "<leader>tp", "<cmd>w<cr>:!pytest -q %:p<cr>", opts)
 

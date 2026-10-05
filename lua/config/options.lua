@@ -2,8 +2,6 @@ local o = vim.opt
 local g = vim.g
 local bo = vim.bo
 
-g.python3_host_prog = "/data/data/com.termux/files/home/.local/bin/python"
-
 g.lazydev_enabled = true
 
 g.matchparen_insert_timeout = 20
@@ -51,10 +49,13 @@ end
 o.viminfo = "'1000,<50,s10,h"
 
 o.guicursor = {
-  "i:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
+  "n-v-c:block",
+  "i-ci-ve:ver25",
+  "r-cr:hor20",
+  "o:hor50",
+  "a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
   "sm:block-blinkwait175-blinkoff150-blinkon175",
 }
-
 o.listchars = {
   tab = "⭢ ",
   trail = "·",

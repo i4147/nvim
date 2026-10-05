@@ -7,3 +7,4 @@ vim.opt.termguicolors = true
 require("config.lazy")
 
 vim.g.python3_host_prog = "/data/data/com.termux/files/home/.local/bin/python"
+-- vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
