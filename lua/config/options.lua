@@ -171,3 +171,18 @@ vim.api.nvim_create_user_command("ToggleWrap", function()
   vim.opt.wrap = not vim.opt.wrap:get()
   print("Wrap: " .. tostring(vim.opt.wrap:get()))
 end, {})
+
+
+vim.g.clipboard = {
+  name = 'termux',
+  copy = {
+    ['+'] = 'termux-clipboard-set',
+    ['*'] = 'termux-clipboard-set',
+  },
+  paste = {
+    ['+'] = 'termux-clipboard-get',
+    ['*'] = 'termux-clipboard-get',
+  },
+  cache_enabled = 1,
+}
+
